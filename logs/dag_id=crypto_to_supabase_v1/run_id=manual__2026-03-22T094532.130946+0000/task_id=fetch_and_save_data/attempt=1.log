@@ -1,0 +1,13 @@
+{"timestamp":"2026-03-22T09:45:38.209988Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 92. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-22T09:45:40.091411Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-22T09:45:40.094019Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/crypto_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-22T09:45:40.114777Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/crypto_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-22T09:45:40.190704Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:40.191461Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:40.192424Z","level":"info","event":"Current task name:fetch_and_save_data","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:40.193218Z","level":"info","event":"Dag name:crypto_to_supabase_v1","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:42.982576Z","level":"info","event":"Successfully saved BTC price: $68785 to Supabase!","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:42.997677Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-22T09:45:43.052639Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:43.054980Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-22T09:45:43.055964Z","level":"info","event":"Task operator:<Task(PythonOperator): fetch_and_save_data>","logger":"task.stdout"}
