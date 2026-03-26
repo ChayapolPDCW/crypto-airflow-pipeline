@@ -13,14 +13,14 @@ SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT']
 def fetch_and_save_multi_coins():
     prices_data = []
     
-    # 2. Loop ดึงข้อมูล
+    # Loop ดึงข้อมูล
     for symbol in SYMBOLS:
         url = f"https://api.binance.com/api/v3/ticker/price?symbol={symbol}"
         response = requests.get(url)
         data = response.json()
         prices_data.append((data['symbol'], float(data['price'])))
 
-    # 3. เชื่อมต่อ Supabase
+    # เชื่อมต่อ Supabase
     db_url = os.getenv('SUPABASE_DB_URL')
     conn = psycopg2.connect(db_url)
     cur = conn.cursor()
